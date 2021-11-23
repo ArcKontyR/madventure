@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity"
+    android:padding="@dimen/inner_frame_layout_padding"
+    android:background="@color/gray"
+    tools:deviceIds="wear">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/inner_frame_layout_padding">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:src="@drawable/logo"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"/>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Email"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edit_shape"
+        android:textColorHint="@color/aquamarine"
+        android:textColor="@color/aquamarine"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Password"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:inputType="textPassword"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/edit_shape"
+        android:textColorHint="@color/aquamarine"
+        android:textColor="@color/aquamarine"/>
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bt_shape"
+        android:text="Sign In"
+        android:onClick="signin"
+        android:textAllCaps="false"/>
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
